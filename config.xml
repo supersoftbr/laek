@@ -5,7 +5,7 @@
 		id        = "com.laek.laekapp"
 		versionCode=""
 		version   = "1.1.0">
-		<name>La&K		</name>
+		<name>LaeK</name>
 		<description>Sistema de restaurantes La&K		</description>
 		<author href="http://www.laek.com.br" email="supersoft@supersoft.com.br">Supersoft Sistemas		</author>
 		<feature name="http://api.phonegap.com/1.0/battery" />
