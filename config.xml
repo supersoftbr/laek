@@ -16,9 +16,6 @@ version   = "1.1.0">
 <feature name="http://api.phonegap.com/1.0/media" />
 <feature name="http://api.phonegap.com/1.0/network" />
 <feature name="http://api.phonegap.com/1.0/notification" />
-<plugin name="undefined" version="" />
-<plugin name="undefined" version="" />
-<plugin name="undefined" version="" />
 <preference name="phonegap-version" value="cli-6.3.0" />
 <preference name="android-build-tool" value="gradle" />
 <preference name="orientation" value="default" />
