@@ -1,0 +1,2 @@
+[05/05/2016 14:54:21] /home/super/public_html/site/home.php (linha 130) em Query, caller: Query: SELECT COUNT(id) AS num FROM depoimentos
+[05/05/2016 14:54:21] /home/super/public_html/site/home.php (linha 134) em Query, caller: Query: SELECT cliente, depoimento FROM depoimentos WHERE exibir='home' ORDER BY RAND() LIMIT 0,4

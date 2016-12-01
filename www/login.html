@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/login.js"></script>
+
+    <title>La&k App</title>
+
+    <style type="text/css">
+    	.app-body {
+    		margin-top: 30px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="loader"></div>
+
+	<div id="fb-root"></div>
+
+	<section class="app-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<img src="images/logo/logo_vermelho_fundo.png" id="login-logo" height="120">
+					<div id="login-desc">PRATICIDADE EM TODO LUGAR</div>
+
+					<a id="login-facebook" onclick="FBLogin()">
+						<img id="img-login-facebook" src="images/facebook-login.png" height="32">
+						<div id="txt-login-facebook">Entrar com <b>Facebook</b></div>
+					</a>
+
+					<div id="ou-login">OU</div>
+
+					<div id="erro-login" class="alert alert-danger">E-mail/senha inválido.</div>		
+					<div id="form-login">
+						<div class="linha-form cheia">
+							<input class="input-login" id="email" type="email" name="email" placeholder="E-mail" required>
+						</div>
+						<div class="linha-form cheia">
+							<input class="input-login" id="senha" type="password" name="senha" placeholder="Senha" required>
+						</div>
+						<div class="linha-form cheia">
+							<input id="btn-login" type="button" value="ENTRAR" onclick="Login()">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function() {$(".loader").delay(1000).fadeOut("slow");});
+    </script>
+</body>
+</html>

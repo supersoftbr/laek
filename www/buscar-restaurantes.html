@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/valida_login.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/buscar-restaurantes.js"></script>
+
+	<div></div>
+	<title>La&k App</title>  
+</head>
+<body>
+	<div class="loader"></div>
+
+	<div class="navbar-fixed-top" id="header">
+		<img src="images/logo/logo_branco.png" id="menu-header" height="70">
+	</div>
+	
+	<section class="app-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="titulo-pagina">
+						<img id="img-pagina" src="images/buscar-branco.png" height="32">
+						<div id="txt-titulo-pagina">Restaurantes</div>
+					</div>
+
+					<div id="restaurantes"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function() {$(".loader").delay(1000).fadeOut("slow");});
+    </script>
+</body>
+</html>

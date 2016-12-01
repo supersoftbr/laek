@@ -1,0 +1,932 @@
+/* INICIO - CSS GLOBAL */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+
+html {
+    background-color: #121314;
+    min-height: 100%;
+    position: relative;    
+}
+body {   
+    background-color: transparent; 
+	color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.loader {
+    background: url('../images/page-loader.gif') 50% 50% no-repeat #121314;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;    
+}
+.loader-index {
+    background: url('../images/logo-loader.png') 50% 50% no-repeat #CF050C;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;    
+}
+#titulo-pagina {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;    
+}
+img#img-pagina {
+    float: left;
+    margin-right: 10px;
+}
+#txt-titulo-pagina {
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+.app-body {
+    margin-top: 90px;
+    padding-bottom: 70px;
+}
+.page-header {
+    color: #FFF;
+}
+.txt-pagina {
+
+}
+.txt-pagina a {
+	color: #FFF;
+	font-weight: 600;
+}
+.txt-pagina a:hover {
+	text-decoration: none;
+}
+/* FIM - CSS GLOBAL */
+
+/* INICIO - CSS AJUSTES BOOTSTRAP */
+.row {
+	margin-bottom: 20px;
+}
+.mb-row {
+    margin-bottom: 0px;
+}
+th {
+	font-weight: 600;
+}
+.glyphicon {
+    margin-right: 5px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #CCC !important;
+    border-radius: 4px !important;
+    box-shadow: unset !important;
+}
+label {
+	cursor: pointer;
+	font-weight: normal;
+}
+.alert-top {
+    height: 53px;
+    left: 50%;
+    position: fixed;
+    top: 20%;
+    z-index: 9999;
+}
+.alert-centered {
+    height: 53px;
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
+}
+/* FIM - CSS AJUSTES BOOTSTRAP */
+
+/* INICIO - CSS FORMULÁRIOS */
+input.form-control, select.form-control {
+    font-weight: 400;
+    height: 45px;
+}
+textarea.form-control {
+    height: 200px;
+    resize: none;
+}
+.linha-form {
+    margin-bottom: 15px;
+}
+.cheia {
+    float: left;
+    width: 100%;
+}
+.metade-esq {
+    float: left;
+    width: 49%;
+}
+.metade-dir {
+    float: right;
+    width: 49%;
+}
+@media (max-width: 768px) {
+    .metade-esq {
+        float: left;
+        width: 100%;
+    }
+    .metade-dir {
+        float: right;
+        width: 100%;
+    }
+}
+.linha-form label {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.txt-form {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+span.obrigatorio {
+    color: #FF4825;
+    display: inline-block;
+    font-weight: bold;
+}
+/* FIM - CSS FORMULÁRIOS */
+
+/* INICIO - CSS HEADER */
+#header {
+    background-color: #CF050C;
+    border-bottom: 1px solid #710307;
+    height: 70px;
+    z-index: 1;
+}
+img#menu-header {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translate(-50%, -50%);
+    top: 35px;
+}
+/* FIM - CSS HEADER */
+
+/* INICIO - CSS MENU */
+#menu {
+    background-color: #CF050C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+img#menu-logo {
+    float: right;
+    margin-right: 10px;
+}
+.navbar-toggle {
+    display: block;
+    float: left;
+}
+.navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+/* FIM - CSS MENU */
+
+/* INICIO - LOGIN */
+img#login-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+#login-desc {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+a#login-facebook {
+    background-color: #375699;
+    border-radius: 30px;
+    color: #FFF;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+a#login-facebook:active,
+a#login-facebook:focus,
+a#login-facebook:hover {
+    text-decoration: none;
+}
+#img-login-facebook {
+    display: inline-block;
+    margin-right: 15px;
+}
+#txt-login-facebook {
+    display: inline-block;
+}
+
+#ou-login {
+    color: #FFF;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#erro-login {
+    display: none;
+}
+.input-login {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    font-weight: 300;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+.input-login:focus {
+    border: 1px solid #FFF !important;
+    border-radius: 30px !important;
+    box-shadow: unset !important;
+}
+#btn-login {
+    background-color: #66D12D;
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+#btn-login:active,
+#btn-login:focus,
+#btn-login:hover {
+    background-color: #66D12D !important;
+    border: none !important;
+    border-radius: 30px !important;
+    color: #FFF !important;
+}
+/* FIM - LOGIN */
+
+/* INICIO - CSS HOME */
+img#logo-home {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+a.link-home {
+    background-color: #FFF;
+    border-radius: 30px;
+    color: #CF050C;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+a.link-home:active,
+a.link-home:focus,
+a.link-home:hover {
+    text-decoration: none;
+}
+.img-link-home {
+    display: inline-block;
+}
+.txt-link-home {
+    display: inline-block;
+    text-align: center;
+    width: 88%;
+}
+/* FIM - CSS HOME */
+
+/* INICIO - CSS RESTAURANTE */
+#info-restaurante {
+
+}
+img#logo-restaurante {
+    border-radius: 50%;
+    float: left;
+    width: 20%;
+}
+#saudacao-restaurante {
+    float: right;    
+    width: 75%;
+}
+#txt-saudacao-restaurante {
+    display: block;
+    margin-top: 10px;
+}
+#nome-restaurante {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+#titulo-restaurante {
+    display: none;
+    float: right;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 5px;
+    width: 75%;
+}
+
+#voltar-menu {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+#img-voltar-menu {
+    float: left;
+    margin-right: 10px;
+}
+#txt-voltar-menu {
+    float: left;
+    font-size: 15px;
+}
+
+#menu-restaurante {
+
+}
+.btn-restaurante {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    color: #FFF;
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    width: 100%;
+}
+.btn-restaurante:active,
+.btn-restaurante:focus,
+.btn-restaurante:hover {
+    cursor: pointer;
+}
+img.img-btn-restaurante {
+    float: left;
+    margin-right: 25px;
+}
+.txt-btn-restaurante {
+    float: left;
+    text-align: left;
+}
+.nome-btn-restaurante {
+    font-size: 17px;
+    font-weight: 600;    
+}
+.desc-btn-restaurante {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+.panel-group {
+    margin: 0px;
+}
+.panel-default {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px !important;  
+    box-shadow: none;
+}
+.panel-default > .panel-heading {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.panel-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border: none;
+}
+.produto-cardapio-restaurante {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.img-cardapio-restaurante {
+    min-height: 52px;
+}
+.img-cardapio-restaurante, .espaco-complementar-restaurante {
+    float: left;
+    width: 20%;
+}
+.img-cardapio-restaurante img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.info-cardapio-restaurante, .preco-pedido-cardapio-restaurante {
+    float: right;
+    width: 75%;
+}
+.item-cardapio-restaurante {
+    display: block;
+    font-weight: 600;
+}
+.promocao-cardapio-restaurante {
+    display: block;
+    font-size: 14px;
+}
+.desc-cardapio-restaurante {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+.box-pedido-cardapio-restaurante {
+    float: left;
+    margin-top: 25px;
+    width: 100%;
+}
+.preco-cardapio-restaurante {
+    float: left;
+}
+span.preco-promocao {
+    text-decoration: line-through;
+}
+.btn-pedido-restaurante {
+    background-color: transparent;
+    border: 2px solid #66D12D;
+    border-radius: 15px;
+    color: #66D12D;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 15px;
+    text-align: center;
+}
+.btn-pedido-restaurante:active,
+.btn-pedido-restaurante:focus,
+.btn-pedido-restaurante:hover {
+    background-color: transparent;
+    border: 2px solid #66D12D;
+    color: #66D12D;
+    text-decoration: none;
+}
+.btn-pedido-promocao-restaurante {
+    margin-top: 7px;
+}
+
+#pedir-agora-background,
+#pedir-agora-formulario {
+    display: none;
+}
+#pedir-agora-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    position: fixed;
+    background: #121314;
+}
+.dialog-pedir-agora {
+    background-color: #121314;
+    left: 0px !important;
+    padding: 0px;
+    top: 0px !important;
+    width: 100% !important;
+}
+.dialog-pedir-agora > .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+    display: none;
+}
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {    
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    width: 100%;
+}
+button.btn-pedir-agora {
+    background-color: #66D12D;
+    border: none;
+    bottom: 0;
+    font-weight: 600;
+    margin: 0px !important;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+#pedir-agora-formulario {
+    overflow: hidden;
+    padding: 0px;
+    padding-bottom: 60px;
+}
+#cancelar-pedir-agora {
+    background-color: #CF050C;
+    border-bottom: 1px solid #710307;
+    height: 70px;
+    z-index: 1;
+}
+img#btn-cancelar-pedir-agora {
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+img#logo-cancelar-pedido {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translate(-50%, -50%);
+    top: 35px;
+}
+#img-produto-pedir-agora {
+    float: left;
+    margin-bottom: 15px;
+    padding-top: 70px;
+    width: 100%;
+}
+#img-produto-pedir-agora img {
+    width: 100%;
+}
+#info-produto-pedir-agora {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+#produto-pedir-agora {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#descricao-pedir-agora {
+    text-align: center;
+}
+#qtde-pedir-agora {
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;    
+}
+#txt-qtde-pedir-agora {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#btn-qtde-pedir-agora {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+}
+#btn-menos-qtde {    
+    background-color: #CF050C;
+    border: none;
+    border-radius: 22px;
+    float: left;
+    font-size: 17px;    
+    height: 35px;
+    padding: 5px;
+    width: 35px;
+}
+#btn-mais-qtde {
+    background-color: #66D12D;
+    border: none;
+    border-radius: 22px;
+    float: left;
+    font-size: 17px;    
+    height: 35px;
+    padding: 5px;
+    width: 35px;
+}
+#btn-menos-qtde span, #btn-mais-qtde span {
+    margin: 0px;
+}
+#total-qtde {
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    width: 60px;
+}
+
+#footer-restaurante {
+    background-color: #CF050C;
+    border-top: 1px solid #710307;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: fixed;    
+    width: 100%;
+}
+#col-footer {
+    padding: 0px;
+}
+.btn-footer-restaurante {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 12.8%;
+}
+.img-footer-restaurante {
+    display: table;
+    margin: 0 auto;
+}
+.txt-footer-restaurante {
+    display: block;
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center;
+}
+/* FIM - CSS RESTAURANTE */
+
+/* INICIO - CSS CARDÁPIO */
+#cardapio-restaurante {
+    float: left;
+    width: 100%;
+}
+/* FIM - CSS CARDÁPIO */
+
+/* INICIO - CSS PROMOÇÕES */
+#promocoes-restaurante {
+    float: left;
+    width: 100%;
+}
+/* FIM - CSS PROMOÇÕES */
+
+/* INICIO - CSS MEUS PEDIDOS */
+.box-meu-pedido {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.info-meu-pedido {
+    float: left;    
+    width: 100%;
+}
+.qtde-meu-pedido {
+    float: left;
+    text-align: left;
+    width: 10%;
+}
+.produto-meu-pedido {
+    float: left;
+    font-weight: 600;
+}
+.valor-meu-pedido {
+    float: right;
+}
+.btns-meu-pedido {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+.btn-cancelar-meu-pedido, .btn-pendente-meu-pedido {
+    background-color: #CF050C;
+    border-radius: 15px;
+    float: left;
+    padding: 3px 12px;
+}
+.btn-cancelar-meu-pedido img, .btn-pendente-meu-pedido img {
+    margin-right: 10px;
+}
+.btn-cancelar-meu-pedido span, .btn-pendente-meu-pedido span {
+    font-size: 11px;
+    font-weight: 600;
+}
+.btn-pendente-meu-pedido {
+    background-color: #FFF;
+    float: right;
+}
+.btn-pendente-meu-pedido span {
+    color: #C20014;
+}
+.box-total-meu-pedido {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+}
+.txt-total-meu-pedido {
+    float: left;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+.total-meu-pedido {
+    background-color: #66D12D;
+    border-radius: 15px;
+    color: #FFF;
+    float: right;
+    font-weight: 600;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.dialog-cancelar-pedido {
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #000;
+    padding: 15px;
+}
+.dialog-cancelar-pedido > .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+    display: none;
+}
+#formulario-cancelar-pedido {
+    margin-bottom: 15px;
+    min-height: auto !important;
+    padding: 0px;
+}
+.btn-confirmar-cancelar-pedido,
+.btn-fechar-cancelar-pedido {
+    border: none;
+    border-radius: 15px;
+    color: #FFF;    
+    font-weight: 600;
+    margin: 0px !important;
+    padding: 5px 15px;
+    text-align: center;
+}
+.btn-confirmar-cancelar-pedido {
+    background-color: #66D12D;
+    float: right;
+}
+.btn-fechar-cancelar-pedido {
+    background-color: #CF050C;
+    float: left;
+}
+#cancelar-pedido-background {
+    background: #121314;    
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+/* FIM - CSS MEUS PEDIDOS */
+
+/* INICIO - CSS FECHAR CONTA */
+#btn-fechar-conta {
+    background-color: #66D12D;
+    bottom: 67px;
+    font-size: 16px;
+    font-weight: 600;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.dialog-fechar-conta {
+    background-color: #FFF;
+    border-radius: 3px;
+    color: #000;
+    padding: 10px;
+}
+.dialog-fechar-conta > .ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix {
+    display: none;
+}
+#formulario-fechar-conta {
+    margin-bottom: 15px;
+    min-height: auto !important;
+    padding: 0px;
+}
+.btn-fechar-conta {
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    float: left;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0px !important;
+    padding: 5px;
+    text-align: center;
+    width: 33%;
+}
+.btn-cancelar-fechar-conta {
+    background-color: #CF050C;    
+}
+.btn-mesa-fechar-conta {
+    background-color: #315191;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    width: 30%;
+}
+.btn-individual-fechar-conta {
+    background-color: #66D12D;
+}
+#fechar-conta-background {
+    background: #121314;    
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+/* FIM - CSS FECHAR CONTA */
+
+/* INICIO - CSS BUSCAR RESTAURANTES */
+.box-restaurante {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.img-restaurante {
+    float: left;
+    width: 20%;
+}
+.img-restaurante img {
+    border-radius: 50%;
+}
+.info-restaurante {
+    float: right;
+    width: 75%;
+}
+.nome-restaurante {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.horario-restaurante {
+    float: right;
+}
+.aberto-restaurante, .fechado-restaurante {
+    border-radius: 50%;
+    float: left;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 5px;
+    width: 15px;
+}
+.aberto-restaurante {
+    background-color: #66D12D;
+}
+.fechado-restaurante {
+    background-color: #CF050C;
+}
+.txt-aberto-restaurante {
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+}
+.endereco-restaurante {
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    width: 100%;
+}
+.telefone-restaurante {
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    width: 100%;
+}
+/* FIM - CSS BUSCAR RESTAURANTES */

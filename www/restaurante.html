@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/unveil.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/valida_login.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/number.js"></script>
+	<script type="text/javascript" src="js/restaurante-navegacao.js"></script>
+	<script type="text/javascript" src="js/restaurante.js"></script>
+    
+    <div></div>
+    <title>La&k App</title>
+
+    <style type="text/css">
+    	.app-body {
+    		padding-bottom: 20px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="loader"></div>
+	
+	<div class="navbar-fixed-top" id="header">
+		<img src="images/logo/logo_branco.png" id="menu-header" height="70">
+	</div>
+
+	<section class="app-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="info-restaurante"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="menu-restaurante">
+						<div class="btn-restaurante" onclick="CategoriasCardapio()">
+							<img class="img-btn-restaurante" src="images/restaurante/cardapio.png" height="40">
+							<div class="txt-btn-restaurante">
+								<div class="nome-btn-restaurante">Cardápio</div>
+								<div class="desc-btn-restaurante">Veja o cardápio completo</div>
+							</div>
+						</div>
+						<div class="btn-restaurante" onclick="Promocoes()">
+							<img class="img-btn-restaurante" src="images/restaurante/promocoes.png" height="40">
+							<div class="txt-btn-restaurante">
+								<div class="nome-btn-restaurante">Promoções</div>
+								<div class="desc-btn-restaurante">Confira nossas promoções</div>
+							</div>
+						</div>
+						<div class="btn-restaurante" onclick="PratoDoDia()">
+							<img class="img-btn-restaurante" src="images/restaurante/prato-do-dia.png" height="40">
+							<div class="txt-btn-restaurante">
+								<div class="nome-btn-restaurante">Prato do dia</div>
+								<div class="desc-btn-restaurante">Já viu nosso prato do dia?</div>
+							</div>
+						</div>
+						<div class="btn-restaurante" onclick="MeusPedidos()">
+							<img class="img-btn-restaurante" src="images/restaurante/meus-pedidos.png" height="40">
+							<div class="txt-btn-restaurante">
+								<div class="nome-btn-restaurante">Meus pedidos</div>
+								<div class="desc-btn-restaurante">Acompanhe tudo que você pediu</div>
+							</div>
+						</div>
+						<div class="btn-restaurante" onclick="FecharConta()">
+							<img class="img-btn-restaurante" src="images/restaurante/fechar-conta.png" height="40">
+							<div class="txt-btn-restaurante">
+								<div class="nome-btn-restaurante">Fechar conta</div>
+								<div class="desc-btn-restaurante">Já está satisfeito?</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function() {$(".loader").delay(1000).fadeOut("slow");});
+    </script>
+</body>
+</html>

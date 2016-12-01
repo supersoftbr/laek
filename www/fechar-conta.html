@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui/jquery-ui.js"></script>
+	
+	<script type="text/javascript" src="js/valida_login.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/number.js"></script>
+	<script type="text/javascript" src="js/restaurante-navegacao.js"></script>
+	<script type="text/javascript" src="js/fechar-conta.js"></script>
+
+    <title>La&k App</title>
+
+    <style type="text/css">
+    	.app-body {
+    		padding-bottom: 110px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="loader"></div>
+
+	<div class="navbar-fixed-top" id="header">
+		<div id="voltar-menu" onclick="history.back()"><img src="images/back-arrow.png" height="20"></div>
+		<img src="images/logo/logo_branco.png" id="menu-header" height="70">
+	</div>
+	
+	<section class="app-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="titulo-pagina">
+						<img id="img-pagina" src="images/restaurante/fechar-conta.png" height="32">
+						<div id="txt-titulo-pagina">Fechar conta</div>
+					</div>
+
+					<div id="fechar-conta-restaurante"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="footer-restaurante">
+		<div class="container">
+			<div class="row mb-row">
+				<div class="col-md-12" id="col-footer">
+					<div class="btn-footer-restaurante" onclick="CategoriasCardapio()">
+						<img class="img-footer-restaurante" src="images/restaurante/cardapio.png" height="30">
+						<div class="txt-footer-restaurante">Cardápio</div>
+					</div>
+					<div class="btn-footer-restaurante" onclick="Promocoes()">
+						<img class="img-footer-restaurante" src="images/restaurante/promocoes.png" height="30">
+						<div class="txt-footer-restaurante">Ofertas</div>
+					</div>
+					<div class="btn-footer-restaurante" onclick="PratoDoDia()">
+						<img class="img-footer-restaurante" src="images/restaurante/prato-do-dia.png" height="30">
+						<div class="txt-footer-restaurante">Hoje</div>
+					</div>
+					<div class="btn-footer-restaurante" onclick="MeusPedidos()">
+						<img class="img-footer-restaurante" src="images/restaurante/meus-pedidos.png" height="30">
+						<div class="txt-footer-restaurante">Pedidos</div>
+					</div>
+					<div class="btn-footer-restaurante" onclick="FecharConta()">
+						<img class="img-footer-restaurante" src="images/restaurante/fechar-conta.png" height="30">
+						<div class="txt-footer-restaurante">Fechar</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    	$(window).load(function() {$(".loader").delay(1000).fadeOut("slow");});
+    </script>
+</body>
+</html>
